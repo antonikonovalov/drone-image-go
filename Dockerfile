@@ -7,7 +7,7 @@ RUN wget http://golang.org/dl/go1.4.2.linux-amd64.tar.gz --quiet && \
 			sudo chown -R ubuntu:ubuntu /usr/local/go && \
 			rm go1.4.2.linux-amd64.tar.gz
 
-RUN golang.sh && go get gopkg.in/olivere/elastic.v2 && \
+RUN sh /etc/drone.d/golang.sh && go get gopkg.in/olivere/elastic.v2 && \
 	go get github.com/antonikonovalov/grpc-geoip2/client && \
 	go get github.com/tools/godep && \
 	go get github.com/drone/config && \
