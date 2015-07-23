@@ -9,6 +9,7 @@ RUN wget http://golang.org/dl/go1.4.2.linux-amd64.tar.gz --quiet && \
 ENV GOROOT=/usr/local/go
 ENV GOPATH=/var/cache/drone
 ENV PATH=$PATH:$GOROOT/bin
+RUN chmod 777 /var/cache/drone
 RUN go get gopkg.in/olivere/elastic.v2 && \
 	go get github.com/antonikonovalov/grpc-geoip2/client && \
 	go get github.com/tools/godep && \
