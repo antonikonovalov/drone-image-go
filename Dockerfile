@@ -23,7 +23,7 @@ RUN go get gopkg.in/olivere/elastic.v2 && \
 	go get github.com/fiam/gounidecode/unidecode && \
 	go get github.com/antonikonovalov/money && \
 	cd /var/cache/drone/src/github.com/antonikonovalov/money && git checkout -qf 14af3291a88c73e66470ec266d9b7110944814c8 && \
-	go get go get gopkg.in/check.v1 && \
+	go get gopkg.in/check.v1 && \
 	go get github.com/stretchr/testify/mock && \
 	go get github.com/nitrous-io/go-mixpanel && \
 	go get github.com/Sam-Izdat/pogo && \
