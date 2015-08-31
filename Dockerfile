@@ -1,6 +1,6 @@
 FROM bradrydzewski/base
 
-RUN curl https://get.docker.io/builds/Linux/x86_64/docker-1.6.1.tgz | sudo tar zxf - -C /
+RUN curl -L https://get.docker.io/builds/Linux/x86_64/docker-1.6.1.tgz | sudo tar zxf - -C /
 
 WORKDIR /home/ubuntu
 USER ubuntu
