@@ -21,8 +21,8 @@ RUN go get gopkg.in/olivere/elastic.v2 && \
 	go get github.com/dgrijalva/jwt-go && \
 	go get github.com/gorilla/securecookie && \
 	go get github.com/fiam/gounidecode/unidecode && \
-	go get github.com/antonikonovalov/money && \
-	cd /var/cache/drone/src/github.com/antonikonovalov/money && git checkout -qf 14af3291a88c73e66470ec266d9b7110944814c8 && \
+	go get -d github.com/antonikonovalov/money && \
+	cd /var/cache/drone/src/github.com/antonikonovalov/money && git checkout -qf d158893cd459aebb92aa277c6c22e9e85aa7119c && \
 	go get gopkg.in/check.v1 && \
 	go get github.com/stretchr/testify/mock && \
 	go get github.com/nitrous-io/go-mixpanel && \
