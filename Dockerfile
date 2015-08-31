@@ -1,4 +1,7 @@
 FROM bradrydzewski/base
+
+RUN curl https://get.docker.io/builds/Linux/x86_64/docker-1.6.1.tgz | sudo tar zxf - -C /
+
 WORKDIR /home/ubuntu
 USER ubuntu
 ADD golang.sh /etc/drone.d/
@@ -29,5 +32,4 @@ RUN go get gopkg.in/olivere/elastic.v2 && \
 	go get github.com/Sam-Izdat/pogo && \
 	go get github.com/garyburd/redigo/redis && \
     	go get github.com/vieux/gocover.io/server/redis 
-# install docker client
-RUN wget -qO- https://get.docker.io/builds/Linux/x86_64/docker-1.6.1.tgz | tar zxf - -C /
+
